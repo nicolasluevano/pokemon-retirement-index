@@ -1,0 +1,50 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h2{
+  margin: 2rem 0;
+}
+
+.input-group{
+  margin: 1rem 0;
+}
+
+.card{
+  margin: 1rem;
+}
+
+.high-price{
+  color:red;
+}
+
+.low-price{
+  color: green;
+}
+
+.last-updated{
+  color: rgba(128, 128, 128, 0.735);
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
