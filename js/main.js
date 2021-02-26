@@ -15,31 +15,6 @@ let url = `https://api.pokemontcg.io/v2/cards?q=name:${userPokemonInput}`
       .then(data => {
 
         console.log(data)
-       
-        //CARD PRICES
-        // let prices = data.data[1].tcgplayer.prices
-        // let priceRanges = Object.values(prices)[0]
-        // console.log(priceRanges)
-
-        // let marketPrice = priceRanges.market
-        // let highPrice = priceRanges.high
-        // let lowPrice = priceRanges.low
-        // let lastUpdatedPrice = data.data[0].tcgplayer.updatedAt
-
-        // //POKEMON NAMES
-        // let image = data.data[0].images.small
-        // let pokemonName = data.data[0].name
-      
-        // //DOM CHANGES
-        // document.querySelector('.card-img-top').src = image
-        // document.querySelector('.market-price').innerText = `$${marketPrice}`
-        // document.querySelector('.high-price').innerText = `$${highPrice}`
-        // document.querySelector('.low-price').innerText = `$${lowPrice}`
-        // document.querySelector('.card-title').innerText = pokemonName
-        // document.querySelector('.price-last-updated').innerText = lastUpdatedPrice
-
-        // //EBAY LINK
-        // document.querySelector('.card-link').href = `https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=${pokemonName}&_sacat=0`
 
 
         //ADD NEW CARDS TO SCREEN
@@ -55,15 +30,7 @@ let url = `https://api.pokemontcg.io/v2/cards?q=name:${userPokemonInput}`
           let lowPrice = priceRanges.low
           let lastUpdatedPrice = data.data[0].tcgplayer.updatedAt
 
-          // //create card columns
-          // let cardColumns = document.createElement('div')
-          // cardColumns.classList.add('row','row-cols-1', 'row-cols-md-2', 'g-4')
-          // document.querySelector('.container').appendChild(cardColumns)
-
-          // //create card columns
-          // let cardColumn = document.createElement('div')
-          // cardColumn.classList.add('col')
-          // cardColumns.appendChild(cardColumn)
+      
 
           //create container
           console.log(pokemon)
@@ -141,23 +108,27 @@ let url = `https://api.pokemontcg.io/v2/cards?q=name:${userPokemonInput}`
       })
 }
 
+//TO TOP BUTTON 
 
-    // <div class="card" style="width: 18rem;">
-    // <img src="" class="card-img-top" alt="...">
-    // <div class="card-body">
-    //   <h5 class="card-title"></h5>
-     
-    // </div>
-    // <ul class="list-group list-group-flush">
-    //   <li class="list-group-item">Market: <span class="market-price"></span></li>
-    //   <li class="list-group-item">High: <span class="high-price"></span></li>
-    //   <li class="list-group-item">Low: <span class="low-price"></span></li>
-    //   <li class="list-group-item">Prices updated on: <span class="price-last-updated"></span></li>
-    // </ul>
-    // <div class="card-body">
-    //   <a href="" target="_blank"class="card-link">Check Ebay</a>
-    // </div>
-    // </div>
+
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
 
 
