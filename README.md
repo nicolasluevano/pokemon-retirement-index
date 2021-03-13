@@ -1,6 +1,6 @@
 
 # Pokemon Retirement Index
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+With the price of pokemon cards skyrocketing over the past couple years, I wanted to create an all-in-one hub that can quicky show you the market price range for each pokemon card. Prices and images are generated from the Pokemon TCG API and you will be directed to 
 
 **Link to project:** https://pokemon-retirement-index.netlify.app/
 
