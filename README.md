@@ -1,6 +1,6 @@
 
 # Pokemon Retirement Index
-With the price of pokemon cards skyrocketing over the past couple years, I wanted to create an all-in-one hub that can quicky show you the market price range for each pokemon card. Prices and images are generated from the Pokemon TCG API and you will be directed to 
+With the price of pokemon cards skyrocketing over the past couple years, I wanted to create an all-in-one hub that can quicky show you the market price range for each pokemon card. Prices and images are generated from the Pokemon TCG API and you will be directed to eBay where you can you see the resell prices for each individual card.
 
 **Link to project:** https://pokemon-retirement-index.netlify.app/
 
@@ -9,15 +9,11 @@ With the price of pokemon cards skyrocketing over the past couple years, I wante
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS, JavaScript, Bootstrap
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+The magic from this project all comes from the Pokemon TCG API. All the cards, card info and prices and pulled from the API and then all the info is pushed to an array that dynamically gets created in JS and has Bootstrap styling. 
 
-## Optimizations
-*(optional)*
-
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+I really got a chance to see the power of using a framework like Bootstrap and how it can really put a nice touch to a site. There were some tricky little bumps along the way in regards of gathering the correct card prices from the API to ensure all prices searched on ebay were the correct type.
